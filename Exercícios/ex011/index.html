@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>
+        Tente abrir esse dite em vários dispositivos diferentes.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/menor.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="imagens flexíveil">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>
+        Fala Juan Mic-2023 huka-huka
+    </p>
+    <audio controls preload="metadata" loop>
+        <source src="media/huka-huka.mp4" type="audio/mp4">
+        <source src="media/huka-huka.ogg" type="audio/ogg">
+        <source src="media/huka-huka.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

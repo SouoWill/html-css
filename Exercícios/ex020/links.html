@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 26, 255);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::before {
+                content: '⇒';
+                color: rgb(139, 228, 255);
+        }
+
+        a::after {
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(139, 228, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a target="_blank" rel="external" href="https://wa.me//5581988545922">WhatsApp</a></li>
+        <li><a target="_blank" rel="external" href="https://www.instagram.com/iamwil.zn/">Instagram</a></li>
+        <li><a target="_blank" rel="external" href="https://www.youtube.com/channel/UCk5cfWGls1HJhFYtfXiuPYQ">Youtube</a></li>
+    </ul>
+    <a href="hover.html">voltar</a>
+</body>
+</html>

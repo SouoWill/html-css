@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Desafio Imagem flexível</h1>
+    <p>
+        esperimente aumentar e diminuir seu navegador
+    </p>
+    <div>
+        <picture>
+            <source media="(max-width: 780px)" srcset="imagens/img-p.png" type="image/png">
+            <source media="(max-width: 1250px)" srcset="imagens/img-m.png" type="image/png">
+            <img src="imagens/img-g.png" alt="paisagem">
+        </picture>
+    </div>
+</body>
+</html>
