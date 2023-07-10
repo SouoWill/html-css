@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body, html {
+    min-height: 100%;
+    font-family: var(--font1);
+}
+.c {
+    background-image: linear-gradient(to right, rgb(8, 8, 8), rgb(68, 64, 64));
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.c > h1 {
+    font-size: 10vw;
+    font-variant: small-caps;
+    font-family: var(--font2);
+}
+.c > nav > p {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.c > nav > p > a {
+    font-size: 15px;
+}
+
+.c > nav > p > a:hover, footer > p > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 3em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    margin-bottom: 50px;
+}
+
+.bloco {
+    background-color: rgb(255, 255, 255);
+}
+
+#imagem1 {
+    padding-left: 0;
+    background: url('imagens/background001.jpg') right center fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.527);
+}
+
+.p-img {
+    text-shadow: 5px 5px 5px black;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    display: inline-block;
+    padding: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#imagem2 {
+    padding-left: 0;
+    background: url('imagens/background002.jpg') right bottom fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.596);
+}
+
+a {
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: black ;
+    color: white;
+    padding: 10px;
+    font-variant: small-caps;
+}
+
+footer > p {
+    font-size: 10px;
+}
+
