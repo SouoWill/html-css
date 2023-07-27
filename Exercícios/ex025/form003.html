@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="mes">Pedíodo letivo: </label>
+            <input type="month" name="mes" id="mes" value="2023-07">
+        </p>
+        <p>
+            <label for="data">Data da Prova: </label>
+            <input type="date" name="data" id="data">
+        </p>
+        <p>
+            <label for="hora">Horario da Prova: </label>
+            <input type="time" name="hora" id="hora">
+        </p>
+        <p>
+            <input type="text" name="nome" id="nome" required minlength="4" maxlength="30" placeholder="Nome (completo)" autocomplete="username">
+        </p>
+        <p>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="Média" step="0.1" required>
+        </p>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+ </form>
+</body>
+</html>
