@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            border-radius: 5px;
+        }
+        legend {
+            margin: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+        }
+        div {
+            margin: 5px;
+        }
+        .en {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.js" method="post">
+        <div>
+            <label for="est">Estado</label>
+            <select name="est" id="est" placeholder="Selecionee">
+                <optgroup label="Região nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </div>
+            <div>
+                <label for="prof">Profissão: </label>
+                <input type="text" name="prof" id="prof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedo</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="msg">Diga Sugetões: </label><br>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </div>
+            <div class="en">
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Resetar">
+        </div>
+    </form>
+</body>
+</html>
