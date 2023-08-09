@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Testes de Form</title>
+    <link rel="stylesheet" href="estilos/style.css">
     <style>
         body {
+            font-family: Arial, Helvetica, sans-serif;
             background-color: black;
             color: white;
-            font-family: Arial, Helvetica, sans-serif;
         }
+
+        div > h1 {
+            margin: 10px;
+        }
+
         input {
             border-radius: 5px;
         }
+
         .en {
             margin: 5px;
             padding: 5px;
         }
+
         legend {
             margin: 5px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -25,27 +33,24 @@
     </style>
 </head>
 <body>
-    <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <div>
+        <h1>Teste de Form</h1>
+    </div>
+
+    <form action="cadatro.js" method="get" autocomplete="on">
         <fieldset>
-            <legend>Dados Pessoais</legend>
+            <legend>Dados</legend>
             <div>
-                <input type="text" name="nome" id="nome" placeholder="Seu Nome" minlength="4"  maxlength="20" required>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" class="form" placeholder="seu e-mail" required autocomplete="email">
             </div>
             <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email"  placeholder="ex: olamundo@gmail.com" required autocomplete="email">
-            </div>
-            <div>
-                <label for="tel">Telefone: </label>
+                <label for="num">Telefone:</label>
                 <input type="tel" name="tel" id="tel" required placeholder="ex: (xx)xxxxx-xxxx" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Perguntas</legend>
-            <h1>Marque as opções que você mais gosta</h1>
             <div>
-                <input type="checkbox" name="c1" id="c1"> <label for="c1"></label>
+                <label for="sen">Senha: </label>
+                <input type="password" name="sen" id="sen" required placeholder="sua senha">
             </div>
         </fieldset>
         <div>
