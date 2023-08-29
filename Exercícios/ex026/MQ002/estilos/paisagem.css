@@ -2,8 +2,7 @@
 
 /* CONF DEITADO */
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: bottom left;
 }

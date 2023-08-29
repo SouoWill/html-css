@@ -2,8 +2,7 @@
 
 /* CONF EM PÉ */
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
