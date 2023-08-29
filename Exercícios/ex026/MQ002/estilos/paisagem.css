@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* CONF DEITADO */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
