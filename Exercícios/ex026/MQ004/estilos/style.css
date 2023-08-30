@@ -46,8 +46,8 @@ img {
     margin: auto;
 }
 
-#cell {display: block;}
-#tablet {display: none;}
-#imp {display: none;}
-#pc {display: none;}
-#tv {display: none;}
+#cell { display: block; }
+    #tablet { display: none; }
+    #imp { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
