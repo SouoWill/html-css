@@ -13,7 +13,7 @@
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span>
-        <menu id="menu">
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -37,7 +37,11 @@
     </main>
     <script>
         function clickMenu() {
-            menu.styles.display = 'block'
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.styles.display = 'block'
+            }
         }
     </script>
 </body>
