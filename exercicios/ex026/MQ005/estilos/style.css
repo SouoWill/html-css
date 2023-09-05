@@ -16,12 +16,16 @@ header {
 }
 
 header > h1 {
-    padding: 10px;
     text-align: center;
+    padding: 10px;
 }
 
 menu {
     display: none;
+    max-width: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(100, 99, 99);
 }
 
 .material-symbols-outlined {
@@ -34,7 +38,6 @@ menu {
 
 #burguer {
     cursor: pointer;
-    display: block;
     color: white;
     background-color: rgb(59, 59, 59);
     text-align: center;
@@ -53,10 +56,11 @@ menu > ul {
 
 menu > ul > li > a {
     display: block;
+    margin: auto;
+    max-width: 200px;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgba(59, 59, 59, 0.39);
     color: white;
 }
 
@@ -64,6 +68,14 @@ menu > ul > li > a:hover {
     background-color: rgb(255, 255, 255);
     transition-duration: 0.5s;
     color: black;
+}
+
+.a1 {
+    border-top-right-radius: 10px;
+}
+
+.a2 {
+    border-bottom-right-radius: 10px;
 }
 
 main {

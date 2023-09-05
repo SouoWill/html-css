@@ -17,6 +17,7 @@ Grandes telas: acima de 1201
     
     menu {
         display: block;
+        max-width: none;
     }
 
     menu > ul > li {
@@ -27,6 +28,11 @@ Grandes telas: acima de 1201
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         margin-left: 10px;
+    }
+
+    .a1, .a2 {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 0px;
     }
 
     main {
