@@ -42,7 +42,7 @@ menu {
 }
 
 #burguer:hover {
-    background-color: white;
+    background-color: rgb(189, 186, 186);
     color: black;
     transition-duration: 0.7s;
 }
@@ -56,23 +56,23 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgba(59, 59, 59, 0.479);
+    background-color: rgba(59, 59, 59, 0.39);
     color: white;
-    border-top: 1px solid rgb(167, 167, 167);
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
-    transition-duration: 0.7s;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    color: black;
 }
 
 main {
-    width: 90vw;
+    width: 100vw;
     background-color: white;
     margin: auto;
     padding: 10px;
-    border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 article > h2 {
